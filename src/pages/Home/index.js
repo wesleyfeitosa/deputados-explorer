@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FiClipboard, FiSearch } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 
 import { Container, DeputadosContainer } from './styles';
 import api from '../../services/api';
@@ -44,10 +45,10 @@ const Home = () => {
       </Container>
       <DeputadosContainer>
         {deputados.map((dep) => (
-          <a href="dasdsa" key={dep.id}>
+          <Link to={`/details/${dep.id}`} key={dep.id}>
             <img src={dep.urlFoto} alt={dep.nome} />
             {dep.nome}
-          </a>
+          </Link>
         ))}
       </DeputadosContainer>
     </>

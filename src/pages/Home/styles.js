@@ -12,6 +12,15 @@ const appearFromBottom = keyframes`
   }
 `;
 
+const rotate = keyframes`
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+`;
+
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -34,6 +43,7 @@ export const Container = styled.div`
 
   form {
     display: flex;
+    margin: 30px;
 
     input {
       flex: 1;
@@ -56,6 +66,10 @@ export const Container = styled.div`
         css`
           cursor: not-allowed;
           opacity: 0.6;
+
+          svg {
+            animation: ${rotate} 2s linear infinite;
+          }
         `}
     }
   }
