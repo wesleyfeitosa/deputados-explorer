@@ -1,113 +1,92 @@
-import styled, { keyframes, css } from 'styled-components';
-import { shade } from 'polished';
-
-const appearFromBottom = keyframes`
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-`;
-
-const rotate = keyframes`
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-`;
+import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  background: #2d2f34;
-  max-width: 650px;
-  border-radius: 4px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-  margin: 80px auto 10px;
+  margin-top: 20px;
+  margin-bottom: 70px;
 
-  > svg {
-    padding-top: 0px;
+  img {
+    width: 260px;
+  }
+`;
+
+export const Cabecalho = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 30px;
+
+  p {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 15px;
   }
 
-  h1 {
-    margin: 30px 0;
+  h2 {
+    font-size: 32px;
+    color: #3d3d4d;
   }
 
   form {
     display: flex;
-    margin: 30px;
+    width: 100%;
 
     input {
       flex: 1;
-      padding: 10px 20px;
-      border-radius: 4px 0 0 4px;
-      font-size: 16px;
-      color: #2d2f34;
+      font-size: 18px;
+      padding: 15px 20px;
+      border: 0;
+      border-radius: 6px 0 0 6px;
     }
 
     button {
-      background: #72c0ea;
-      border-radius: 0 4px 4px 0;
-      padding: 0 30px;
+      padding: 5px 40px;
       display: flex;
       justify-content: center;
-      align-items: center;
-
-      ${(props) =>
-        props.isLoading &&
-        css`
-          cursor: not-allowed;
-          opacity: 0.6;
-
-          svg {
-            animation: ${rotate} 2s linear infinite;
-          }
-        `}
+      border: 0;
+      border-radius: 0 6px 6px 0;
+      background-color: #73af00;
     }
   }
 `;
 
 export const DeputadosContainer = styled.div`
-  max-width: 650px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 
   a {
-    background: #383b40;
-    text-decoration: none;
-    border-radius: 4px;
-    padding: 24px;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    font-size: 20px;
-    color: #f8f8f8;
-    transition: 0.2s;
-    animation: ${appearFromBottom} 0.8s;
+    flex-direction: row;
+    background-color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #3d3d4d;
 
     & + a {
-      margin-top: 10px;
-    }
-
-    &:hover {
-      background-color: ${shade(0.2, '#383b40')};
-      transform: translateX(20px);
+      margin-top: 22px;
     }
 
     img {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
+      width: 130px;
+      height: 130px;
+      border-radius: 6px;
+    }
+
+    section {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px 35px;
+
+      p {
+        font-size: 28px;
+        font-weight: 600;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+      }
     }
   }
 `;

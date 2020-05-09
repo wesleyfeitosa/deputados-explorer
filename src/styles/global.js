@@ -1,23 +1,29 @@
 import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
-  *{
-    padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;800&display=swap');
+
+  * {
     margin: 0;
+    padding: 0;
     outline: 0;
-    border: 0;
     box-sizing: border-box;
   }
 
   body {
-    background: #1f2023;
+    background-color: #E0E0E5;
     -webkit-font-smoothing: antialiased;
   }
 
   body, input, button {
-    color: #f8f8f8;
-    font-style: 14px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-family: 'Jost', sans-serif;
+  }
+
+  #root {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px 20px;
   }
 
   button {
