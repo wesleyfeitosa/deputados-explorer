@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import { FiSearch } from 'react-icons/fi';
+import React, { useState, useEffect } from 'react';
+import { FiSearch, FiLoader } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 
-import { Container, Cabecalho, DeputadosContainer } from './styles';
+import { Container, Cabecalho, Title, DeputadosContainer } from './styles';
 import api from '../../services/api';
 import logoBrasil from '../../assets/brasil.svg';
 
@@ -10,6 +10,22 @@ const Home = () => {
   const [deputado, setDeputado] = useState('');
   const [deputados, setDeputados] = useState([]);
   const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    async function getDeputados() {
+      const { data } = await api.get('/deputados', {
+        params: {
+          ordem: 'ASC',
+          ordenarPor: 'nome',
+          nome: deputado,
+        },
+      });
+
+      setDeputados(data.dados);
+    }
+
+    getDeputados();
+  }, [deputado]);
 
   async function handleSubmit(event) {
     event.preventDefault();
@@ -28,10 +44,10 @@ const Home = () => {
   }
 
   return (
-    <>
-      <Container isLoading={loading}>
+    <Container>
+      <Cabecalho>
         <img src={logoBrasil} alt="Brasil" />
-        <Cabecalho>
+        <Title isLoading={loading}>
           <p>
             <span>@</span>
             <span>Deputados</span>
@@ -47,11 +63,11 @@ const Home = () => {
               onChange={(event) => setDeputado(event.target.value)}
             />
             <button type="submit">
-              <FiSearch size={25} />
+              {loading ? <FiLoader size={25} /> : <FiSearch size={25} />}
             </button>
           </form>
-        </Cabecalho>
-      </Container>
+        </Title>
+      </Cabecalho>
       <DeputadosContainer>
         {deputados.map((dep) => (
           <Link to={`/details/${dep.id}`} key={dep.id}>
@@ -75,7 +91,7 @@ const Home = () => {
           </Link>
         ))}
       </DeputadosContainer>
-    </>
+    </Container>
   );
 };
 

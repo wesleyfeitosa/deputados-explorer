@@ -6,7 +6,7 @@ const Details = ({ match }) => {
 
   useEffect(() => {
     console.log(id);
-  }, []);
+  }, [id]);
 
   return (
     <>

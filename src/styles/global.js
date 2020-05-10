@@ -1,8 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;800&display=swap');
-
   * {
     margin: 0;
     padding: 0;
@@ -18,6 +16,7 @@ export default createGlobalStyle`
   body, input, button {
     font-size: 16px;
     font-family: 'Jost', sans-serif;
+    border: 0;
   }
 
   #root {
