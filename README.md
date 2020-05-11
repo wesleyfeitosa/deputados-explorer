@@ -1,68 +1,85 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<br />
+<p align="center">
+    <img alt="Deputados Explorer" src="src/assets/logo.svg" width="50%" />
+</p>
+<br />
+<br />
 
-## Available Scripts
+<p align="center">
 
-In the project directory, you can run:
+  <a href="LICENSE" style="text-decoration: none">
+    <img alt="License" src="https://img.shields.io/github/license/wesleyfeitosa/deputados-explorer?style=flat-square" />
+  </a>
 
-### `yarn start`
+  <a href="https://github.com/wesleyfeitosa/deputados-explorer/issues" style="text-decoration: none">
+    <img alt="Issues" src="https://img.shields.io/github/issues/wesleyfeitosa/deputados-explorer?style=flat-square" />
+  </a>
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+  <a href="https://github.com/wesleyfeitosa/deputados-explorer/stargazers" style="text-decoration: none">
+    <img alt="Stars" src="https://img.shields.io/github/stars/wesleyfeitosa/deputados-explorer?style=flat-square" />
+  </a>
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+  <a href="#" style="text-decoration: none">
+    <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/wesleyfeitosa/deputados-explorer?style=flat-square" />
+  </a>
 
-### `yarn test`
+</p>
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<p align="center">
+  <a href="#rocket-technologies"> :rocket: Technologies</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="#-project">💻 Project</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="#-deploy">:hammer: Deploy</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="#-how-to-contribute">🤔 How to contribute</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="#-how-to-run">🔖 How to run</a>&nbsp;&nbsp;
+</p>
 
-### `yarn build`
+<br>
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## :rocket: Technologies
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+This project was developed with the following technologies:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [React](https://reactjs.org)
+- [Styled Components](https://styled-components.com/)
+- [API Câmara dos Deputados](https://dadosabertos.camara.leg.br/swagger/api.html)
 
-### `yarn eject`
+## 💻 Project
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+This application provides a graphical interface for voters to search for their deputies, the application uses the open data api of the Federal Chamber of Deputies of Brasil.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<img alt="Homepage" src="src/assets/deputados_explorer_home.png">
+<img alt="Issues" src="src/assets/deputados_explorer_details.png">
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## :hammer: Deploy
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Frontend: https://deputados-explorer.wesleyfeitosa.com.br/
 
-## Learn More
+## 🤔 How to contribute
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Fork this repository;
+- Create a branch with your feature: `git checkout -b minha-feature`;
+- Commit your changes: `git commit -m 'feat: Minha nova feature'`;
+- Push to your branch: `git push origin minha-feature`.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+After the merge of your pull request is done, you can delete your branch.
 
-### Code Splitting
+## 🔖 How to run
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+#### Cloning the project
+```sh
+git clone https://github.com/wesleyfeitosa/deputados-explorer.git
+cd deputados-explorer
+yarn
+```
+#### Starting Frontend
+```sh
+yarn start
+```
 
-### Analyzing the Bundle Size
+## :memo: License
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+This project is under the MIT license. See the file [LICENSE](LICENSE) for more details.
 
-### Making a Progressive Web App
+---
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Made with 💜 by Wesley Feitosa :wave:
