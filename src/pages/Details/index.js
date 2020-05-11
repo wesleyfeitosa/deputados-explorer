@@ -45,6 +45,7 @@ const Details = () => {
 
       <section>
         Naturalidade
+        <hr />
         <p>
           {deputado.municipioNascimento}/{deputado.ufNascimento}
         </p>
@@ -52,12 +53,14 @@ const Details = () => {
 
       <section>
         Escolaridade
+        <hr />
         <p>{deputado.escolaridade}</p>
       </section>
 
       {deputado.ultimoStatus && (
         <section>
           Informações políticas
+          <hr />
           <p>Situação: {deputado.ultimoStatus.situacao}</p>
           <p>Condição Eleitoral: {deputado.ultimoStatus.condicaoEleitoral}</p>
           <p>Legislatura: {deputado.ultimoStatus.idLegislatura}</p>
@@ -71,6 +74,7 @@ const Details = () => {
       {deputado.ultimoStatus && deputado.ultimoStatus.gabinete && (
         <section>
           Gabinete
+          <hr />
           <p>Sala: {deputado.ultimoStatus.gabinete.sala}</p>
           <p>Andar: {deputado.ultimoStatus.gabinete.andar}</p>
           <p>Prédio: {deputado.ultimoStatus.gabinete.predio}</p>
