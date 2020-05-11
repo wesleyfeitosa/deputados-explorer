@@ -25,7 +25,7 @@ const Home = () => {
     }
 
     getDeputados();
-  }, [deputado]);
+  }, []);
 
   async function handleSubmit(event) {
     event.preventDefault();

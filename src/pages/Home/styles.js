@@ -21,11 +21,7 @@ const rotate = keyframes`
   }
 `;
 
-export const Container = styled.div`
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center; */
-`;
+export const Container = styled.div``;
 
 export const Cabecalho = styled.div`
   display: flex;
@@ -48,7 +44,7 @@ export const Title = styled.div`
   p {
     font-size: 48px;
     font-weight: 600;
-    margin-bottom: 15px;
+    margin-bottom: 8px;
   }
 
   h2 {
@@ -66,6 +62,8 @@ export const Title = styled.div`
       padding: 10px 20px;
       border: 0;
       border-radius: 6px 0 0 6px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
     button {
@@ -76,6 +74,8 @@ export const Title = styled.div`
       border-radius: 0 6px 6px 0;
       background-color: #73af00;
       transition: 0.3s;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
       ${(props) =>
         props.isLoading &&
@@ -113,8 +113,8 @@ export const DeputadosContainer = styled.div`
     }
 
     &:hover {
-      transform: translateX(20px);
-      background: ${shade(0.2, '#fff')};
+      transform: translateX(10px);
+      background: ${shade(0.07, '#fff')};
     }
 
     img {

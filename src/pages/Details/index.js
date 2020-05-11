@@ -21,23 +21,27 @@ const Details = () => {
 
   return (
     <Container>
-      <section>
+      <header>
         {deputado.ultimoStatus && (
           <img
             src={deputado.ultimoStatus.urlFoto}
             alt={deputado.ultimoStatus.nomeEleitoral}
           />
         )}
-        <h1>{deputado.nomeCivil}</h1>
-        <p>CPF: {deputado.cpf}</p>
-        <p>
-          Nascimento: {deputado.dataNascimento}{' '}
-          {deputado.dataFalescimento && (
-            <span>- Falescimento: {deputado.dataFalescimento}</span>
+        <div>
+          <h1>{deputado.nomeCivil}</h1>
+          <p>CPF: {deputado.cpf}</p>
+          <p>
+            Nascimento: {deputado.dataNascimento}{' '}
+            {deputado.dataFalescimento && (
+              <span>- Falescimento: {deputado.dataFalescimento}</span>
+            )}
+          </p>
+          {deputado.ultimoStatus && (
+            <p>E-mail: {deputado.ultimoStatus.email}</p>
           )}
-        </p>
-        {deputado.ultimoStatus && <p>E-mail: {deputado.ultimoStatus.email}</p>}
-      </section>
+        </div>
+      </header>
 
       <section>
         Naturalidade
