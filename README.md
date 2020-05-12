@@ -25,15 +25,7 @@
 
 </p>
 
-<p align="center">
-  <a href="#rocket-technologies"> :rocket: Technologies</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-  <a href="#-project">💻 Project</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-  <a href="#-deploy">:hammer: Deploy</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-  <a href="#-how-to-contribute">🤔 How to contribute</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-  <a href="#-how-to-run">🔖 How to run</a>&nbsp;&nbsp;
-</p>
-
-<br>
+---
 
 ## :rocket: Technologies
 
