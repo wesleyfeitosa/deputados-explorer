@@ -3,7 +3,6 @@
     <img alt="Deputados Explorer" src="src/assets/logo.svg" width="50%" />
 </p>
 <br />
-<br />
 
 <p align="center">
 
