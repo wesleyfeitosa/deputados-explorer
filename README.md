@@ -43,7 +43,7 @@ This application provides a graphical interface for voters to search for their d
 
 ## :hammer: Deploy
 
-- Frontend: https://deputados-explorer.wesleyfeitosa.com.br/
+- Frontend: https://deputados-explorer.wesleyfeitosa.dev/
 
 ## 🤔 How to contribute
 
